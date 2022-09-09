@@ -16,7 +16,7 @@ import numpy as np
 import networkx
 import csv
 
-def ciclo_hamiltoniano_M(n,q):
+def Grafo_M(n,q):
  
   m=(n+q)//(2*(q))
   k=n//(q)
@@ -24,7 +24,6 @@ def ciclo_hamiltoniano_M(n,q):
             
   ################################# M(n,q) #################################################
   G =  pyyed.Graph()
-  H =  pyyed.Graph()
 
   for i in range(1,n):
       G.add_edge('u'+str(i), 'v'+str(i),line_type="line",arrowhead="none", arrowfoot="none")
@@ -42,6 +41,6 @@ def ciclo_hamiltoniano_M(n,q):
   for i in range(1,q):
     complete_graph(i)     
   G.write_graph('M('+str(n)+','+str(q)+')_'+'Grafo.graphml', pretty_print=True)
- 
-#Entre com n e q
-  ciclo_hamiltoniano_M(n,q)
+
+ #Entre com n e q
+  Grafo_M(n,q)
