@@ -43,5 +43,5 @@ def ciclo_hamiltoniano_M(n,q):
     complete_graph(i)     
   G.write_graph('M('+str(n)+','+str(q)+')_'+'Grafo.graphml', pretty_print=True)
  
-for i in range(3,11):
-  ciclo_hamiltoniano_M(1000,i)
+#Entre com n e q
+  ciclo_hamiltoniano_M(n,q)
