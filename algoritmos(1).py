@@ -1,6 +1,4 @@
-https://colab.research.google.com/drive/1a1KmLLaNf6v8nTSxPS0PKrDzYkej-GXB
-
-
+https://colab.research.google.com/drive/1a1KmLLaNf6v8nTSxPS0PKrDzYkej-GXB?usp=sharing
 import networkx as nx
 import random
 import os
