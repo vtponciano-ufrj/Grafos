@@ -5,6 +5,25 @@ import networkx as nx
 import random
 import os
 
+
+# Criar um grafo não direcionado vazio
+G = nx.Graph()
+# Check if the file exists
+filename = 'tree9.tgf'
+if not os.path.isfile(filename):
+    print(f"File '{filename}' does not exist.")
+    # Handle the error or exit the program as needed
+else:
+    # Read the edges from the file
+    with open(filename, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line:  # Check if the line is not empty
+                vertices = line.split()
+                u, v = map(int, vertices[:2])  # Convert the first two values to integers
+                G.add_edge(u, v)
+
+
 def threshold(v, G):
       return 2
 
